@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScripts</title>
+    
+</head>
+<body>
+ <h1>People entered:</h1>
+ <h2 id="count-el">0</h2>
+ <button id="increment-btn" onclick="increment()">INCREMENT</button>
+ <button id="save-btn" onclick="save()">SAVE</button>
+ <p id="save-el">Previous entires:</p>
+
+<script>
+    let saveEl = document.getElementById("save-el")
+    let countEl = document.getElementById("count-el")
+    let count = 0
+
+ function increment(){
+    count += 1
+    countEl.textContent = count
+ }
+
+ function save(){
+   let countStr = count + "-"
+   saveEl.textContent += countStr
+   countEl.textContent = 0
+   count = 0
+ }
+ 
+</script>
+    <!-- <script src="controlFlow.js"></script> -->
+    <!-- <script src="closure.js"></script> -->
+    <!-- <script src="HigherOrderFunction.js"></script> -->
+    <!-- <script src="Hoisting.js"></script> -->
+    <!-- <script src="Methods.js"></script> -->
+    <!-- <script src="Arrays.js"></script> -->
+    <!-- <script src="freecodecamp.js"></script> -->
+</body>
+</html>

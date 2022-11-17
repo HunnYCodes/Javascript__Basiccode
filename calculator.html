@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <span id="num1-el"></span>
+    <span id="num2-el"></span>
+    <span id="result"></span>
+<button id="add" onclick="add()">+</button>
+<button id="minus" onclick="minus()">-</button>
+<button id="multi" onclick="multi()">*</button>
+<button id="division" onclick="division()">/</button>
+<script>
+        let num1 = 8
+        let num2 = 2
+
+        document.getElementById("num1-el").textContent = num1
+        document.getElementById("num2-el").textContent = num2
+        let Result = document.getElementById("result")
+function add(){
+     
+      Result.textContent = "SUM:" + (num1 +num2)     
+}
+function minus(){
+      a = num1-num2
+      Result.textContent = a
+      
+}
+function multi(){
+      a = num1 *num2
+      Result.textContent = a
+      
+}
+function division(){
+      a = num1/num2
+      Result.textContent = a  
+}
+</script>
+</body>
+</html>
